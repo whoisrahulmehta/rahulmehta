@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+// Vendors
+@import 'node_modules/locomotive-scroll/dist/locomotive-scroll';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @import "./style/initial";
+ @import './style/error';
+ @import "./style/navbar"; 
+ @import './style/herobanner';
+
+ @import './style/social';
+ @import './style/intro';
+ @import './style/getintouch';
+
+ @import './style/port';
+ @import './style/contacts';
+
+ @import './style/blogs';
+ @import './style/about';
+
+ @import './style/tools';
+
+ @import './style/awards';
+
+ @import  './style/services';
+ @import './style/projects';
+
+ @import  './style/playingcard';
+ @import './style/footer';

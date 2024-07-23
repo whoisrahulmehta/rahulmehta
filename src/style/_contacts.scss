@@ -1,0 +1,44 @@
+.Contacts {
+  background-color: $sec;
+  .social{
+    a{
+        font-size: 4rem;
+    }
+  }
+  form {
+    // padding: 7% 0 0 7%;
+    @include flex(start, center, column);
+    gap: 1%;
+    input,
+    select {
+      width: 100%;
+    }
+    input[type="checkbox"] {
+      width: 10%;
+    }
+  }
+  label {
+    width: 100%;
+  }
+  input,
+  textarea,
+  select {
+    &:focus {
+      border: 0;
+      outline: 0;
+      background-color: darken($color: $sec, $amount: 10%);
+    }
+  }
+
+  .verTex {
+    writing-mode:vertical-rl;
+    @include flex;  
+    position: absolute;
+    // left: 4%;
+    // padding: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-orientation: mixed;
+  }
+
+}

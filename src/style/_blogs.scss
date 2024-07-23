@@ -1,0 +1,9 @@
+.blogpage{
+    background: $light; 
+    @include flex(start, center, column ); 
+    .Intro{
+        &:nth-child(even){
+            background-color: lighten($color: $light, $amount: 5%);
+        }
+    }
+  }

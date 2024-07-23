@@ -1,0 +1,57 @@
+.Playingcard {
+  z-index: 1;
+  order: 6;
+  height: 100vh;
+  width: 100%;
+  // background-color: white
+//   @include flex;
+  .square {
+    width: 80%;
+    height: 80%;
+    background-color: $sec;
+    border-radius: 25px;
+    position: relative;
+  }
+  .container {
+    position: absolute;
+    @include flex;
+    gap: 30px;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    // background-color: red;
+    .circle {
+      @include flex;
+      background-color: white;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .innercircle {
+      background-color: black;
+      width: 60%;
+      height: 60%;
+      border-radius: 50%;
+      padding: 10%;
+      position: relative;
+      @include flex;
+    }
+    .arm {
+      // position: absolute;
+      // top: 50%;
+      // left: 50%;
+      // transform: translateX(-50%) translateY(-50%) ;
+      width: 100%;
+      height: 20%;
+      // background-color: red;
+    }
+    .eye {
+      background-color: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  }
+}

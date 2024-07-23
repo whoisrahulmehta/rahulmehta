@@ -1,0 +1,22 @@
+.Portfolio {
+  background: linear-gradient(
+    60deg,
+    $sec,
+    white,
+    black,
+    wheat,
+    $sec,
+  );
+  // @include flex(start,center, column);
+  background-size: 500%;
+  animation: grad 20s ease-in-out 0 infinite alternate;
+
+  @keyframes grad {
+    from {
+      background-position: 0%;
+    }
+    to {
+      background-position: 100%;
+    }
+  }
+}

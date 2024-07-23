@@ -1,0 +1,38 @@
+header {
+  height: auto;
+  width: 100%;
+
+  nav {
+    background: $sec;
+    z-index: 100000;
+    @include flex;
+    // border-radius: 21px;
+    @include Shadow($sec);
+    .imageLogo{
+      @include flex;
+      img{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+        
+      }
+    }
+  }
+  .expMenu {
+    background: rgba($color: $sec, $alpha: 0.5);
+    color: white;
+    font-size: 2rem;
+    backdrop-filter: blur(10px);
+    .active {
+      border-bottom: 0;
+    }
+    a {
+      // border: 1px solid black;
+      @include flex;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.5rem !important ;
+      width: 100%;
+    }
+  }
+}

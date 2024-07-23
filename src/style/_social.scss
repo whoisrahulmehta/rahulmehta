@@ -1,0 +1,52 @@
+.social {
+  // @include flex; 
+  width: 100%;
+  height: 100vh;
+  background: darken($sec, 4%);
+  .vertical{
+    // width: 100%;
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    background: rgba($color: white, $alpha: 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    @include flex;
+  }
+  .boxes {
+    // @include flex(center, center, column);
+    border-radius: 8px;
+    background: #eeedeb;
+    box-shadow: inset 9px 9px 10px #d6d5d4, inset -9px -9px 10px #ffffff;
+  }
+  .box {
+    // @include flex;
+    // @include magicBox(gold);
+    gap: 1%;
+    .socialIcon {
+      @include flex(center, center, row);
+      // @include magicBox(gold);
+      position: relative;
+      a, p{
+        @include flex;
+        span{
+          display: none;
+        }
+        &:hover{
+          transform: scale(1.07);
+          // filter: drop-shadow(0 0 10px 30px lightpink);
+          span{
+            display: inline-flex;
+          position: absolute;
+          justify-content: center;
+          align-items: center;
+          &:hover{
+            transform: scale(1.04);
+          }
+          }
+        }
+      }
+    }
+  }
+}

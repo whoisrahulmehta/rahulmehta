@@ -1,0 +1,23 @@
+.Tools {
+  scrollbar-width: none;
+  position: relative;
+  overflow: hidden;
+  background: $sec;
+  .verTex {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    @include magicBox(gold);
+    color: black;
+    position: absolute;
+    backdrop-filter: blur(10px);
+  }
+  .Logos {
+    animation: scroll 10s linear 0s infinite forwards;
+    gap: 0.1%;
+  }
+  @keyframes scroll {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}

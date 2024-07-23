@@ -1,0 +1,60 @@
+footer {
+    margin: 7vh 0 0 0;
+    border-top: 1px solid white;
+  background: black;
+  // @include flex(end, center, column);
+  gap: 4%;
+  .notification {
+    background: $sec;
+    @include flex(space-between);
+    // @extend %primaryShadow ;
+  }
+  .fboxes {
+    // @include flex;
+    justify-content: space-around;
+    .fbox {
+      // @include flex(center, start, column);
+    //   @include magicBox($light);
+      // width: 25%;
+      // height: 100%;
+      // border: 1px solid black;
+      &:nth-child(3) {
+        flex-direction: row;
+        align-items: center;
+        gap: 15%;
+      }
+    }
+  }
+
+  .bottom {
+    border-top: 1px solid $light;
+    color: white;
+    // width: 80%;
+    height: 5%;
+    // padding: 1% 1%;
+    @include flex;
+    p {
+      border-right: 1px solid $light;
+      padding: 0% 1%;
+      &:hover {
+        color: red;
+        cursor: pointer;
+      }
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+}
+
+.subscribe{
+  background: transparent;
+  @include magicBox(gold);
+  @include flex;
+  backdrop-filter: blur(5px);
+  color: black;
+  form{
+    background: $sec;
+    
+  }
+}

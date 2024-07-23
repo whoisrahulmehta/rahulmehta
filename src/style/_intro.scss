@@ -1,0 +1,11 @@
+.intro{
+    background-color: $sec;
+.imageBox{
+    @include flex;
+}
+}
+.itro{
+    @include magicBox($gold);
+    color: black;
+    // font-size: 3rem;
+}

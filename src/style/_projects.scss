@@ -1,0 +1,105 @@
+.Projects {
+  background: $sec;
+  @include flex(space-evenly, space-evenly, row);
+  .project {
+    @include Shadow($sec);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: center;
+    // overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .imagebg {
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+
+  .vertical {
+    // width: 100%;
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    background: rgba($color: white, $alpha: 0.4);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    @include flex;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    // grid-template-columns: auto auto;
+    gap: 1%;
+  }
+  .grid {
+    .hoverME {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .project {
+      &:nth-child(odd) {
+        // background: yellow;
+
+        &:hover {
+          .hoverME {
+            display: inline-flex;
+            .infobox {
+              flex-direction: row-reverse;
+            }
+          }
+        }
+        .hoverME {
+          display: none;
+          right: 0%;
+          transform: translateX(-50%);
+          // color: red;
+          z-index: 50;
+        }
+      }
+      &:nth-child(even) {
+        // background: red;
+        &:hover {
+          .hoverME {
+            display: inline-flex;
+          }
+        }
+        .hoverME {
+          display: none;
+          left: -25%;
+          transform: translateX(-25%);
+          // color: black;
+          z-index: 50;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project {
+    &:nth-child(odd) {
+      .hoverME {
+        top: 10% !important;
+        right: -5%;
+        transform: translateX(20%) !important;
+      }
+    }
+    &:nth-child(even) {
+      .hoverME {
+        top: 10% !important;
+        left: 25%;
+        transform: translateX(30%) !important;
+      }
+    }
+  }
+}

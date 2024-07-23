@@ -1,0 +1,41 @@
+.getInt {
+  background: darken($sec, 4%);
+  @include flex(space-evenly, center, column);
+  h1 {
+    @include flex(center, end, row);
+  }
+  .box {
+    // border: 1px solid black;
+    @include flex(start, center, row);
+    form {
+      // @include magicBox($dark);
+      @include flex(space-evenly, space-evenly, column);
+      height: 100%;
+      label {
+        width: 100%;
+        height: 15%;
+      }
+
+      input,
+      textarea,
+      select {
+        font-size: 1rem;
+        resize: none;
+        width: 100%;
+        height: 50%;
+        background: $sec;
+        border: 0;
+        &:focus {
+          border: 0;
+          outline: 0;
+          background: darken($sec, 10%);
+        }
+      }
+
+      input[type="checkbox"] {
+        width: 10%;
+        height: 30%;
+      }
+    }
+  }
+}

@@ -16,7 +16,10 @@ function Introduction() {
           transition={{ duration: 1, ease: "easeIn" }}
           className="imageBox sm:w-[30%] sm:h-[60%]  "
         >
-          <img src="/rahulmehta/public/mypicture.jpg" alt="mypic" />
+          {/* <img src="/rahulmehta/public/mypicture.jpg" alt="mypic" /> */}
+          <img src="https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/mypicture.jpg" alt="img" />
+          {/* https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/${}.jpg */}
+
         </motion.div>
         <motion.p
           initial={{ x: "100%", opacity: 0 }}

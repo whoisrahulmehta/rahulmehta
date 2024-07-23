@@ -17,91 +17,91 @@ function Projects() {
         {[
           {
             name: "Money Verse",
-            horizon: "moneyverse.png",
+            horizon: "moneyverse.PNG",
             verti1: "",
             video: "moneyverse.mp4",
             link: "https://whoisrahulmehta.github.io/moneyverse/",
           },
           {
             name: "TICTACTOE",
-            horizon: "tictactoeh.png",
+            horizon: "tictactoeh.PNG",
             verti1: "",
             video: "tictactoe.mp4",
             link: "https://whoisrahulmehta.github.io/livetictactoe/",
           },
           {
             name: "Textify",
-            horizon: "textifyhome.png",
+            horizon: "textifyhome.PNG",
             verti1: "",
             video: "tictactoe.mp4",
             link: "https://whoisrahulmehta.github.io/textify/",
           },
           {
             name: "exchange360",
-            horizon: "exchange360.png",
+            horizon: "exchange360.PNG",
             verti1: "",
             video: "tictactoe.mp4",
             link: "https://whoisrahulmehta.github.io/exchange360/",
           },
           {
             name: "Lazy cal",
-            horizon: "lazycal.png",
+            horizon: "lazycal.PNG",
             verti1: "",
             video: "tictactoe.mp4",
             link: "https://whoisrahulmehta.github.io/lazycal/",
           },
           {
             name: "Tazaakhabar",
-            horizon: "taazakhabar.png",
+            horizon: "taazakhabar.PNG",
             verti1: "",
             video: "tazaakhabar.mp4",
             link: "https://whoisrahulmehta.github.io/tazaakhabar/",
           },
           {
             name: "taskbook",
-            horizon: "taskbook.png",
+            horizon: "taskbook.PNG",
             verti1: "",
             video: "taskbook.mp4",
             link: "https://whoisrahulmehta.github.io/taskbook/",
           },
           {
             name: "worldweatherwebb",
-            horizon: "worldweatherwebb.png",
+            horizon: "worldweatherwebb.PNG",
             verti1: "",
             video: "taskbook.mp4",
             link: "https://whoisrahulmehta.github.io/worldweatherwebb/#/",
           },
           {
             name: "super calculator",
-            horizon: "supcal.png",
+            horizon: "supcal.PNG",
             verti1: "",
             video: "taskbook.mp4",
             link: "https://whoisrahulmehta.github.io/supcalculator/",
           },
           {
             name: "Wordzwizz3.0",
-            horizon: "wordzwizz.png",
+            horizon: "wordzwizz.PNG",
             verti1: "",
             video: "taskbook.mp4",
             link: "https://whoisrahulmehta.github.io/wordzwizz3.0/",
           },
           {
             name: "IBEX",
-            horizon: "ibex.png",
+            horizon: "ibex.PNG",
             verti1: "",
             video: "taskbook.mp4",
             link: "https://whoisrahulmehta.github.io/ibex/",
           },
           {
             name: "Bloggy",
-            horizon: "bloggy.png",
+            horizon: "bloggy.PNG",
             verti1: "",
             video: "taskbook.mp4",
             link: "https://whoisrahulmehta.github.io/bloggy/#/",
           },
           {
             name: "Palais De L'amour",
-            horizon: "palace.png",
+            horizon: "palace.PNG",
             verti1: "",
             video: "taskbook.mp4",
             link: "https://whoisrahulmehta.github.io/thepalace/#/",
@@ -124,7 +124,9 @@ function Projects() {
               transition={{ duration: 1, ease: "easeIn" }}
               className="w-full h-full absolute imagebg"
             >
-              <img src={`/rahulmehta/public/${proj.horizon}`} alt="img" />
+              {/* <img src={`/rahulmehta/public/${proj.horizon}`} alt="img" /> */}
+          <img src={`https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/${proj.horizon}`} alt="img" />
+          {/* https://github.com/whoisrahulmehta/assetsforwebsites/blob/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/exchange360.PNG */}
               {/* <img src={`/rahulmehta/public/${proj.horizon}`} alt="img" /> */}
             </motion.div>
             {/* <a href={proj.link} target="_black" className="hoverME absolute left-[-50%] bottom-[3%] translate-x-[-50%]  btn-primary px-1 h-[30px] w-[80px] py-0 font-[900] z-[999] uppercase">visit Now</a> */}

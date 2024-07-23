@@ -36,9 +36,15 @@ function Blog() {
           {greetmsg + " "} Friend !
         </h1>
         <p className="img md:w-[55%] w-full  sm:h-[60%] h-[100%]  flex flex-row justify-center items-center">
-          <img
+          {/* <img
             className="w-[100%] h-[100%] object-cover origin-center "
             src="/rahulmehta/public/rahulimg.jpg"
+            
+            alt="img"
+          /> */}
+          <img
+            className="w-[100%] h-[100%] object-cover origin-center "
+            src={`https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/rahulimg.jpg`}
             alt="img"
           />
         </p>

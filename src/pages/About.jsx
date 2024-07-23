@@ -15,26 +15,28 @@ function About() {
   return (
     <>
       <section
-      data-scroll
-      className="About w-full h-full  flex flex-col justify-evenly items-center  mt-5 py-5">
-        <div 
-         className=" bg-white flex sm:flex-row flex-col justify-center items-center gap-[4%] greet w-[100%] h-[95vh] ">
+        data-scroll
+        className="About w-full h-full  flex flex-col justify-evenly items-center  mt-5 py-5"
+      >
+        <div className=" bg-white flex sm:flex-row flex-col justify-center items-center gap-[4%] greet w-[100%] h-[95vh] ">
           <p className="img md:w-[100%] w-full  sm:h-[100%] h-[100%]  flex flex-row justify-center items-center">
             <img
               className="w-[100%] h-[100%] sm:object-contain object-cover origin-center "
-              src="/rahulmehta/public/rahulme.jpg"
+              // src="/rahulmehta/public/rahulme.jpg"
+              src={`https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/rahulme.jpg`}
               alt="img"
             />
           </p>
         </div>
         <div
-         data-scroll
-         data-scroll-section
-         data-scroll-speed = "-.2"
-        className="w-full itro px-6 text-left text-xl text-black flex flex-col items-center justify-center py-7">
-        <h1 className="text-5xl uppercase text-center w-full text-black italic font-[700] flex flex-row items-center justify-center ">
-          About Me
-        </h1>
+          data-scroll
+          data-scroll-section
+          data-scroll-speed="-.2"
+          className="w-full itro px-6 text-left text-xl text-black flex flex-col items-center justify-center py-7"
+        >
+          <h1 className="text-5xl uppercase text-center w-full text-black italic font-[700] flex flex-row items-center justify-center ">
+            About Me
+          </h1>
           I am Rahul Mehta, a passionate Front-End Developer with a diverse and
           enriching background. My journey began with a solid foundation in web
           development during a one-year industry role at aSquare Logics, where I

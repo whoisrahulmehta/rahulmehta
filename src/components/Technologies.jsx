@@ -48,7 +48,7 @@ function Technologies() {
                 key={i}
                 className={` socialIcon h-[12rem] sm:w-[12rem] w-[100%] hover:cursor-pointer rounded-full`}
               >
-                <p className={`sm:w-[100%] sm:h-[100%] h-[70%] w-[70%] sm:scale-0 scale-[0.72] flex flex-row justify-center items-center hover:text-red-500 hover:${ic.color}`}>
+                <p className={`sm:w-[100%] sm:h-[100%] h-[70%] w-[70%] sm:scale-1 scale-[0.72] flex flex-row justify-center items-center hover:text-red-500 hover:${ic.color}`}>
                   {ic.icon}
                   <span className=" bottom-[-2%] text-lg font-[600] whitespace-nowrap uppercase left-[50%] translate-x-[-50%] ">
                     {ic.name}
@@ -80,7 +80,7 @@ function Technologies() {
                 key={i}
                 className={` socialIcon h-[12rem] sm:w-[12rem] w-[100%] hover:cursor-pointer rounded-full`}
               >
-                <p className={`sm:w-[100%] sm:h-[100%] h-[70%] w-[70%] sm:scale-0 scale-[0.72] flex flex-row justify-center items-center hover:text-red-500 hover:${ic.color}`}>
+                <p className={`sm:w-[100%] sm:h-[100%] h-[70%] w-[70%] sm:scale-1 scale-[0.72] flex flex-row justify-center items-center hover:text-red-500 hover:${ic.color}`}>
                   {ic.icon}
                   <span className=" bottom-[-2%] text-lg font-[600] whitespace-nowrap uppercase left-[50%] translate-x-[-50%] ">
                     {ic.name}
@@ -116,7 +116,7 @@ function Technologies() {
                 key={i}
                 className={`socialIcon h-[12rem] sm:w-[12rem] w-[100%] hover:cursor-pointer rounded-full`}
               >
-                <p className={`sm:w-[100%] sm:h-[100%] h-[70%] w-[70%] sm:scale-0 scale-[0.72] flex flex-row justify-center items-center hover:text-red-500 hover:${ic.color} `}>
+                <p className={`sm:w-[100%] sm:h-[100%] h-[70%] w-[70%] sm:scale-1 scale-[0.72] flex flex-row justify-center items-center hover:text-red-500 hover:${ic.color} `}>
                   {ic.icon}
                   <span className=" top-[-2%] text-lg font-[600] whitespace-nowrap uppercase left-[50%] translate-x-[-50%] ">
                     {ic.name}

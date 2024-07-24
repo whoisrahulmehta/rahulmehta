@@ -1,10 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "./components/Layout";
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 // import Subscribe from "./pages/Subscribe";
@@ -12,29 +8,39 @@ import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Errorpage from "./components/Errorpage";
-import LocomotiveScroll from 'locomotive-scroll';
-
+import LocomotiveScroll from "locomotive-scroll";
+import Loadingpage from "./components/Loadingpage";
 
 function App() {
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
 
-const locomotiveScroll = new LocomotiveScroll();
+    return () => clearTimeout(timer);
+  }, []);
+
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>
-      <Router>
-        <Layout data-scroll-container>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            {/* <Route path="/subscribe" element={<Subscribe />} /> */}
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<Errorpage />} />
-          </Routes>
-        </Layout>
-      </Router>
+      {loading ? (
+        <Loadingpage />
+      ) : (
+        <Router>
+          <Layout data-scroll-container>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              {/* <Route path="/subscribe" element={<Subscribe />} /> */}
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<Errorpage />} />
+            </Routes>
+          </Layout>
+        </Router>
+      )}
     </>
   );
 }

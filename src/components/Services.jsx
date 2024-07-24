@@ -13,7 +13,7 @@ const handleClick =(prop)=>{
       data-scroll
     data-scroll-section
     data-scroll-speed = ".3"
-    className="services w-[100%] h-[100%] relative sm:px-9 px-2 py-20 ">
+    className="services w-[100%] h-[100%] relative sm:px-9 px-2 py-10 ">
       <h1 className="sm:text-2xl text-4xl w-[8%] sm:w-[2%] vertical uppercase font-[700] text-black  absolute left-0  ">
         Services
       </h1>

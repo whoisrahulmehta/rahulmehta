@@ -34,7 +34,7 @@ const locomotiveScroll = new LocomotiveScroll;
           img: "clgcert.jpg",
         },
       ].map((a, i) => (
-        <div key={i} className="images cert sm:w-[30%] w-full sm:h-[30vh] h-[55vh]  relative flex flex-row justify-center items-center ">
+        <div key={i} className="images cert sm:w-[30%] w-full sm:h-[30vh] sm:px-1 px-5 h-[55vh]  relative flex flex-row justify-center items-center ">
           <img className="w-[100%] h-[100%] object-cover " src={a.img} alt={a.name} />
           <p className="Des w-[100%] h-[50%] px-[4%] absolute bottom-[2%]  flex  flex-col justify-end items-center ">
             <span className=" text-xs text-center w-full ">{a.name}</span>

@@ -8,12 +8,12 @@ function Projects() {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.4"
-      className="Projects w-[100%] h-[120%] relative  sm:px-9 px-2 py-20 my-10 "
+      className="Projects w-[100%] min-h-[100%] relative  sm:px-9 px-4 sm:py-[25vh] pb-[30vh]"
     >
-      <h1 className="sm:text-2xl text-4xl w-[8%] h-[100%] sm:w-[2%] vertical uppercase font-[700] text-black flex flex-col justify-between items-evenly   absolute left-0  ">
+      <h1 className="sm:text-2xl text-4xl w-[8%] h-[10%] sm:w-[2%] vertical uppercase font-[700] text-black flex flex-col justify-between items-evenly   absolute left-0  ">
         <p className="text-4xl sm:2xl font-[800]"> Projects </p>
       </h1>
-      <section className="grid w-[100%] h-[100%] sm:grid-cols-2 grid-cols-1 py-10 pb-[19rem]">
+      <section className="grid m-0 w-[100%] h-[100%] sm:grid-cols-2 grid-cols-1 ">
         {[
           {
             name: "Money Verse",
@@ -116,7 +116,7 @@ function Projects() {
         ].map((proj, pI) => (
           <div
             key={pI}
-            className=" project   w-[100%] sm:h-[50vh] h-[50vh]  flex flex-col justify-between items-evenly relative"
+            className=" project w-[100%] sm:h-[50vh] h-[60vh]  flex flex-col sm:justify-between sm:items-evenly relative"
           >
             <motion.div
               initial={{ y: "-100%", x: "-100%", opacity: 0 }}
@@ -125,26 +125,40 @@ function Projects() {
               className="w-full h-full absolute imagebg"
             >
               {/* <img src={`/rahulmehta/public/${proj.horizon}`} alt="img" /> */}
-          <img src={`https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/${proj.horizon}`} alt="img" />
-          {/* https://github.com/whoisrahulmehta/assetsforwebsites/blob/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/exchange360.PNG */}
+              <img
+                src={`https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/${proj.horizon}`}
+                alt="img"
+              />
+              {/* https://github.com/whoisrahulmehta/assetsforwebsites/blob/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/exchange360.PNG */}
               {/* <img src={`/rahulmehta/public/${proj.horizon}`} alt="img" /> */}
             </motion.div>
             {/* <a href={proj.link} target="_black" className="hoverME absolute left-[-50%] bottom-[3%] translate-x-[-50%]  btn-primary px-1 h-[30px] w-[80px] py-0 font-[900] z-[999] uppercase">visit Now</a> */}
             <div className="hoverME sm:absolute ps-5 border border-white sm:ps-0  h-[fit-content]  w-[100px]  flex flex-col justify-start items-start sm:text-7xl text-2xl z-4 whitespace-nowrap uppercase text-white ">
               <div className="infobox flex  gap-3  items-center">
-                <p className="font-[900] z-[999]">{proj.name.split("").map((a, i)=>(
-                  <motion.span 
-                  initial={{y:"-100%" , opacity: 0}} animate={{opacity:1, y:0}} transition={{duration:1, ease: "easeIn"}}
-                  className="font-[900]">{a}</motion.span>
-                ))}</p>{" "}
+                <p className="font-[900] z-[999]">
+                  {proj.name.split("").map((a, i) => (
+                    <motion.span
+                      key={i}
+                      initial={{ y: 100, opacity: 0 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.5,
+                        delay: `.1${i}`,
+                        ease: "linear",
+                      }}
+                      className="font-[900]"
+                    >
+                      {a}
+                    </motion.span>
+                  ))}
+                </p>{" "}
                 <a
                   className="text-white text-2xl"
                   href={proj.link}
                   target="_blank"
                 >
-                  {" "}
                   <BsBrowserChrome />{" "}
-                </a>{" "}
+                </a>
               </div>
             </div>
           </div>

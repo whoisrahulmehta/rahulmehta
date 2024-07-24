@@ -11,11 +11,9 @@ import { useNavigate } from "react-router-dom";
 function Footer() {
   const navigate = useNavigate();
 
-
-
   return (
     <>
-      <footer className="w-full sm:h-[60vh] h-[100vh] sm:mt-[5%] flex flex-col justify-end items-center relative">
+      <footer className="w-full sm:h-[60vh]  h-[150vh] sm:mt-[5%] flex flex-col justify-end items-center relative">
         <div className="notification sm:w-[60%] w-[95%] h-[15vh] mx-auto rounded-t-lg absolute top-[5%] left-[50%] translate-x-[-50%] translate-y-[-50%] px-[10%] ">
           <p className="w-[40%] text-lg font-[400]">
             Want to get notified when i post an update ?
@@ -27,7 +25,7 @@ function Footer() {
 
         <div className="fboxes flex sm:flex-row flex-col justify-center sm:justify-around items-center sm:w-[90%] w-[100%]  sm:h-[40%] h-[60%] mx-auto  text-white gap-[1%]">
           <div className="fbox w-[100%] sm:h-[30%] sm:w-[25%] h-[100%]  flex flex-col justify-center sm:items-start items-center ">
-            <p className="w-[80%] sm:w-[100%] text-center sm:text-left px-[3%] sm:px-0 " >
+            <p className="w-[80%] sm:w-[100%] text-center sm:text-left px-[3%] sm:px-0 ">
               Men are happy, when they are building something. Keep Building
               Brothers!
             </p>
@@ -51,16 +49,24 @@ function Footer() {
           <div className="fbox w-[100%] sm:h-[30%] sm:w-[25%] h-[100%]  flex flex-col justify-center sm:items-start items-center  hover:text-red-500">
             <FaWolfPackBattalion size="10rem" />
           </div>
-          <div className="fbox w-[100%] sm:h-[30%] sm:w-[25%] h-[100%]  object-cover flex flex-col justify-center sm:items-start items-center  hover:text-red-500">
-             <img
+          <div className="fbox w-[100%] sm:h-[30%] sm:w-[25%] h-[100%] gap-5  object-cover flex flex-col justify-center sm:items-start items-center  hover:text-red-500">
+            {/* <img
               className="sm:w-[100%] sm:h-[100%] w-[70%] h-[70%] object-contain -rotate-12 "
               src="/rahulmehta/public/whrmlogo.png"
               alt="logo"
+            /> */}
+            <span className="text-xs text-center w-full">A Website by Rahul Mehta</span>
+            <img
+              className="sm:w-[100%] sm:h-[100%] w-[50%] h-[50%] object-contain -rotate-12 "
+              src={`https://github.com/whoisrahulmehta/assetsforwebsites/raw/29959e1613289ad0dd2ca03bfd71d96be05cdb62/portassets/whrmlogo.png`}
+              alt="img"
             />
           </div>
         </div>
         <section className="bottom p-[1%] sm:text-sm text-xs sm:w-[80%] w-[100%] ">
-          <p><FaCopyright /></p>
+          <p>
+            <FaCopyright />
+          </p>
           <p>Front End </p>
           <p>2024</p>
           <p className="">Rahul Mehta</p>

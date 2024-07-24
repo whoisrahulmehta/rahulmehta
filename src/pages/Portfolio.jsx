@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import Projects from '../components/Projects';
 import Playingcard from '../components/Playingcard';
 import LocomotiveScroll from 'locomotive-scroll';
+import Social from '../components/Social';
 
 function Portfolio() {
   const locomotiveScroll = new LocomotiveScroll ;
@@ -13,11 +14,10 @@ function Portfolio() {
      <Portlandpage /> 
      <Tools />
      <Services />
-
      <Playingcard />
      <Projects />
-     <Tools />
-     
+     {/* <Tools /> */}
+     {/* <Social /> */}
     </>
   )
 }

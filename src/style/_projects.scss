@@ -1,6 +1,7 @@
 .Projects {
   background: $sec;
   @include flex(space-evenly, space-evenly, row);
+  // gap:10%;
   .project {
     @include Shadow($sec);
     background-position: center;
@@ -39,7 +40,7 @@
     display: grid;
     grid-template-rows: repeat(auto, 1fr);
     // grid-template-columns: auto auto;
-    gap: 1%;
+    gap: 0.2%;
   }
   .grid {
     .hoverME {

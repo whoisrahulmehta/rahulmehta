@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Introduction from "../components/Introduction";
 function Blog() {
   const [time, setTime] = useState(new Date());
   const [greetmsg, setGreetmsg] = useState("Day");
@@ -16,11 +16,11 @@ function Blog() {
     let newMsg = "Morning";
 
     if (hours >= 4 && hours < 12) {
-      newMsg = "Morning";
+      newMsg = "Good Morning";
     } else if (hours >= 12 && hours < 17) {
-      newMsg = "Afternoon";
+      newMsg = "Good Afternoon";
     } else if (hours >= 17 && hours < 21) {
-      newMsg = "Evening";
+      newMsg = "Good Evening";
     } else {
       newMsg = "What a beautiful day";
     }
@@ -30,7 +30,8 @@ function Blog() {
   const navigate = useNavigate();
 
   return (
-    <section className="blogpage flex flex-col justify-start items-center gap-[2vh]  border border-white mt-[5vh] w-[100%]  py-[7vh]">
+    <section className="blogpage flex flex-col  justify-start items-center gap-[2vh]  border border-white mt-[5vh] w-[100%]  py-[7vh]">
+    {/* <Introduction setOrder={'row'} /> */}
       <div className="greet  flex sm:flex-row flex-col-reverse justify-center items-center gap-[4%] greet w-[100%] h-[45vh] ">
         <h1 className="sm:text-5xl text-5xl text-black font-[500] capitalize sm:w-[45%] w-full text-center whitespace-nowrap ">
           {greetmsg + " "} Friend !

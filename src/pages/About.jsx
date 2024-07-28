@@ -32,7 +32,7 @@ function About() {
           data-scroll
           data-scroll-section
           data-scroll-speed="-.2"
-          className="w-full itro px-6 text-left text-xl text-black flex flex-col items-center justify-center py-7"
+          className="w-full itro px-6 text-left text-xl text-black flex flex-col items-center backdrop-blur-md justify-center py-7"
         >
           <h1 className="text-5xl uppercase text-center w-full text-black italic font-[700] flex flex-row items-center justify-center ">
             About Me
@@ -130,9 +130,9 @@ function About() {
           See My Projects ?
         </button>
         {/* <Native /> */}
-        <Introduction />
         <Blog />
         <Awards />
+        {/* <Introduction /> */}
       </section>
     </>
   );

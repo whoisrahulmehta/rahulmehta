@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <>
-      <Introduction />
+      <Introduction  setOrder={'row'}/>
       <Playingcard />
       <Herobanner />
       <Social />

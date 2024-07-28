@@ -8,7 +8,7 @@ function Playingcard() {
     window.addEventListener("mousemove", (e) => {
       const x = e.clientX;
       const y = e.clientY;
-      const deltax = x - window.innerHeight /2;
+      const deltax = x - window.innerWidth /2;
       const deltay = y - window.innerHeight /2;
 
       const degress = Math.atan2(deltay, deltax) * (180/Math.PI);

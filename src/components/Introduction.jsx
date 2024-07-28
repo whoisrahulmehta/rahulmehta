@@ -1,14 +1,14 @@
 import { easeIn, motion } from "framer-motion";
 import React from "react";
 
-function Introduction() {
+function Introduction({setOrder}) {
   return (
     <>
       <section
         data-scroll
         data-scroll-section
         data-scroll-speed="-.7"
-        className="intro h-[70vh] w-full my-[1%] flex sm:flex-row flex-col justify-center items-center md:px-[5%] px-1"
+        className={`intro h-[70vh] w-full my-[1%] flex sm:flex-${setOrder} flex-col justify-center items-center md:px-[5%] px-1`}
       >
         <motion.div
           initial={{ x: "-100%", opacity: 0 }}

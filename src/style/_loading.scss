@@ -1,6 +1,6 @@
 .loading{
     background-color: black;
-    @include flex(center, center, column);
+    @include flex(center, center, column );
 }
 
 .load{
